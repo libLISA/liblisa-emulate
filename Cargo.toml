@@ -1,0 +1,27 @@
+[package]
+name = "liblisa-emulate"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+log = { version = "0.4" }
+env_logger = "0.10"
+liblisa-libcli = { path = "../liblisa/cli/liblisa-libcli" }
+liblisa = { path = "../liblisa/liblisa" }
+liblisa-enc = { path = "../liblisa/liblisa-enc" }
+liblisa-synth = { path = "../liblisa/liblisa-synth" }
+liblisa-x64-observer = { path = "../liblisa/arch/x64/liblisa-x64-observer" }
+serde = { version = "1.0", features = [ "derive" ] }
+serde_json = "1.0"
+jemallocator = "0.5"
+clap = { version = "4.4.8", features = ["derive"] }
+rand = "0.8"
+hex = "0.4"
+libc = "0.2.151"
+xmas-elf = { git = 'https://github.com/jxors/xmas-elf', branch = "relr-support" }
+elfloader = { git = 'https://github.com/jxors/rust-elfloader', branch = "relr-support" }
+thiserror = "1"
+
+[dev-dependencies]
+test-log = "0.2.10"
