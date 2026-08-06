@@ -7,11 +7,11 @@ edition = "2021"
 [dependencies]
 log = { version = "0.4" }
 env_logger = "0.10"
-liblisa-libcli = { path = "../liblisa/cli/liblisa-libcli" }
-liblisa = { path = "../liblisa/liblisa" }
-liblisa-enc = { path = "../liblisa/liblisa-enc" }
-liblisa-synth = { path = "../liblisa/liblisa-synth" }
-liblisa-x64-observer = { path = "../liblisa/arch/x64/liblisa-x64-observer" }
+liblisa-libcli = { git = "https://github.com/liblisa/liblisa", rev = "0959ecd" }
+liblisa = "0.3.0"
+liblisa-enc = "0.3.0"
+liblisa-synth = "0.3.0"
+liblisa-x64-observer = "0.3.1"
 serde = { version = "1.0", features = [ "derive" ] }
 serde_json = "1.0"
 jemallocator = "0.5"
